@@ -29,16 +29,16 @@
 &kp ESCAPE    &trans        &trans     &trans          &trans    &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END          &kp BACKSPACE
 &sk LEFT_WIN  &sk LEFT_ALT  &sk RCTRL  &sk LEFT_SHIFT  &trans    &kp TAB        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ENTER
 &trans        &trans        &trans     &trans          &trans    &kp PAGE_DOWN  &trans          &trans          &trans           &kp DELETE
-                                       &trans          &trans    &trans         &mo 3
+                                       &trans          &trans    &trans         &to 3
             >;
         };
 
         layer_3 {
             bindings = <
-&bt BT_SEL 0    &bt BT_SEL 1  &trans     &trans     &trans    &kp F12  &kp F7  &kp F8  &kp F9  &trans
-&trans          &kp LALT      &kp LCTRL  &kp LSHFT  &trans    &kp F11  &kp F4  &kp F5  &kp F6  &trans
-&bt BT_CLR_ALL  &trans        &trans     &trans     &trans    &kp F10  &kp F1  &kp F2  &kp F3  &trans
-                                         &mo 0      &trans    &trans   &trans
+&bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 3  &trans     &trans    &kp F12  &kp F7  &kp F8  &kp F9  &trans
+&trans          &kp LALT      &kp LCTRL     &kp LSHFT  &trans    &kp F11  &kp F4  &kp F5  &kp F6  &trans
+&bt BT_CLR_ALL  &trans        &trans        &trans     &trans    &kp F10  &kp F1  &kp F2  &kp F3  &trans
+                                            &to 0      &trans    &trans   &trans
             >;
         };
     };
