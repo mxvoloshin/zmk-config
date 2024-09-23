@@ -16,19 +16,19 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE  &kp HASH      &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans       &kp EXCLAMATION  &kp N7  &kp N8  &kp N9  &kp EQUAL
-&trans     &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS    &kp UNDERSCORE   &kp N4  &kp N5  &kp N6  &kp BSLH
-&trans     &kp AT_SIGN   &kp LBKT              &kp RBKT               &trans       &kp N0           &kp N1  &kp N2  &kp N3  &kp FSLH
-                                               &to 3                  &kp LSHFT    &trans           &trans
+&kp GRAVE  &kp HASH      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp QUESTION    &kp EXCLAMATION  &kp N7  &kp N8  &kp N9  &kp EQUAL
+&trans     &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS       &kp UNDERSCORE   &kp N4  &kp N5  &kp N6  &kp BSLH
+&trans     &kp AT_SIGN   &kp LBKT              &kp RBKT               &kp DOLLAR      &kp N0           &kp N1  &kp N2  &kp N3  &kp FSLH
+                                               &to 3                  &kp LSHFT       &trans           &trans
             >;
         };
 
         layer_2 {
             bindings = <
-&kp ESCAPE    &trans        &kp RA(TAB)  &kp LC(TAB)     &trans    &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END          &kp BACKSPACE
-&sk LEFT_WIN  &sk LEFT_ALT  &sk RCTRL    &sk LEFT_SHIFT  &trans    &kp TAB        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ENTER
-&trans        &trans        &trans       &trans          &trans    &kp PAGE_DOWN  &trans          &trans          &trans           &kp DELETE
-                                         &trans          &trans    &trans         &to 3
+&kp ESCAPE    &trans        &kp RA(TAB)  &kp LC(TAB)     &kp LC(F4)    &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END          &kp BACKSPACE
+&sk LEFT_WIN  &sk LEFT_ALT  &sk RCTRL    &sk LEFT_SHIFT  &trans        &kp TAB        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ENTER
+&trans        &trans        &trans       &trans          &trans        &kp PAGE_DOWN  &kp LC(C)       &kp LC(V)       &kp LC(X)        &kp DELETE
+                                         &trans          &trans        &trans         &to 3
             >;
         };
 
