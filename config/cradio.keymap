@@ -25,9 +25,9 @@
 
         layer_2 {
             bindings = <
-&trans        &trans        &kp LA(TAB)  &kp LS(TAB)     &kp LC(F4)    &kp PAGE_UP    &kp HOME        &kp TAB       &kp END          &none
-&sk LEFT_WIN  &sk LEFT_ALT  &sk RCTRL    &sk LEFT_SHIFT  &kp LC(O)     &kp LEFT       &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp LC(I)
-&trans        &trans        &trans       &trans          &trans        &kp PAGE_DOWN  &kp LC(C)       &kp LC(V)     &kp LC(A)        &kp DELETE
+&trans        &trans        &kp LC(TAB)  &kp LS(TAB)     &kp LC(F4)    &kp PAGE_UP    &kp HOME        &kp TAB       &kp END          &none
+&sk LEFT_WIN  &sk LEFT_ALT  &sk RCTRL    &sk LEFT_SHIFT  &trans        &kp LEFT       &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+&kp LC(O)     &trans        &trans       &kp LC(I)       &trans        &kp PAGE_DOWN  &kp LC(C)       &kp LC(V)     &kp LC(A)        &kp DELETE
                                          &trans          &trans        &trans         &to 3
             >;
         };
