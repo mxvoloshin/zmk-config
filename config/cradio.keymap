@@ -4,7 +4,9 @@
 &mt {
     tapping-term-ms = <120>;
 };
-
+&lt {
+    tapping-term-ms = <120>;
+};
 / {
     keymap {
         compatible = "zmk,keymap";
