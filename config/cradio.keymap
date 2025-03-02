@@ -1,21 +1,30 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-&mt {
-    tapping-term-ms = <120>;
-};
-&lt {
-    tapping-term-ms = <120>;
-};
+&mt { tapping-term-ms = <120>; };
+
+&lt { tapping-term-ms = <120>; };
+
 / {
+    behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         layer_0 {
             bindings = <
-&kp Q  &kp W  &kp E  &kp R  &kp T                       &kp Y      &kp U        &kp I      &kp O    &kp P
-&kp A  &kp S  &kp D  &kp F  &kp G                       &kp H      &kp J        &kp K      &kp L    &kp SEMI
-&kp Z  &kp X  &kp C  &kp V  &kp B                       &kp N      &kp M        &kp COMMA  &kp DOT  &kp SQT
+&kp Q  &kp W  &kp E        &kp R  &kp T                       &kp Y      &kp U        &kp I        &kp O    &kp P
+&kp A  &kp S  &hm LCTRL D  &kp F  &kp G                       &kp H      &kp J        &hm RCTRL K  &kp L    &kp SEMI
+&kp Z  &kp X  &kp C        &kp V  &kp B                       &kp N      &kp M        &kp COMMA    &kp DOT  &kp SQT
                      &mo 2  &mt LEFT_SHIFT BACKSPACE    &kp SPACE  &lt 1 ENTER
             >;
         };
@@ -31,7 +40,7 @@
 
         layer_2 {
             bindings = <
-&trans        &trans        &kp LC(TAB)  &kp LS(TAB)     &kp LC(F4)    &kp PAGE_UP    &kp HOME        &kp TAB       &kp END          &none
+&trans        &trans        &kp LA(TAB)  &kp LC(TAB)     &kp LC(F4)    &kp PAGE_UP    &kp HOME        &kp TAB       &kp END          &none
 &sk LEFT_WIN  &sk LEFT_ALT  &sk RCTRL    &sk LEFT_SHIFT  &trans        &kp LEFT       &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
 &kp LC(O)     &trans        &trans       &kp LC(I)       &trans        &kp PAGE_DOWN  &kp LC(C)       &kp LC(V)     &kp LC(A)        &kp DELETE
                                          &trans          &trans        &trans         &to 3
