@@ -3,7 +3,7 @@
 
 &mt { tapping-term-ms = <120>; };
 
-&lt { tapping-term-ms = <80>; };
+&lt { tapping-term-ms = <120>; };
 
 / {
     behaviors {
@@ -33,9 +33,9 @@
         layer_0 {
             bindings = <
 &kp Q  &kp W  &kp E        &kp R               &kp T                       &kp Y      &kp U                    &kp I        &kp O    &kp P
-&kp A  &kp S  &hm LCTRL D  &hm LEFT_SHIFT F    &kp G                       &kp H      &hm RIGHT_SHIFT J         &hm RCTRL K  &kp L    &kp SEMI
+&lt 1 A  &kp S  &hm LCTRL D  &hm LEFT_SHIFT F  &kp G                       &kp H      &hm RIGHT_SHIFT J        &hm RCTRL K  &kp L    &lt 1 SEMI
 &kp Z  &kp X  &kp C        &kp V               &kp B                       &kp N      &kp M                    &kp COMMA    &kp DOT  &kp SQT
-                           &mo 2               &kp BACKSPACE               &kp SPACE  &lt 1 ENTER
+                           &mo 2               &kp BACKSPACE               &kp SPACE  &kp ENTER
             >;
         };
 
@@ -52,7 +52,7 @@
             bindings = <
 &trans        &trans        &kp LA(TAB)  &kp LC(TAB)     &kp LC(F4)    &kp PAGE_UP    &kp HOME        &kp TAB       &kp END          &none
 &sk LEFT_WIN  &sk LEFT_ALT  &sk RCTRL    &sk LEFT_SHIFT  &trans        &kp LEFT       &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
-&kp LC(O)     &trans        &trans       &kp LC(I)       &trans        &kp PAGE_DOWN  &kp LC(C)       &kp LC(V)     &kp LC(A)        &kp DELETE
+&trans        &trans        &trans       &trans          &trans        &kp PAGE_DOWN  &trans          &trans        &trans           &kp DELETE
                                          &trans          &trans        &trans         &to 3
             >;
         };
